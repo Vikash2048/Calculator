@@ -13,7 +13,7 @@ function App() {
 
         {
           key.map((item,id)=>(
-            <Keys key={id} item={item}/>
+            <Keys key={id} id={id} item={item}/>
           ))
         }
 

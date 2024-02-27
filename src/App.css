@@ -8,6 +8,7 @@
   position: relative;
   font-weight: 500;
   font-size: large;
+  box-shadow: 10px crimson;
 }
 
 .input{
