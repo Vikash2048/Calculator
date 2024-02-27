@@ -1,10 +1,14 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { OutputContext } from '../context/OutputContext'
+import { InputContext } from '../context/InputContext';
 
 const Input = () => {
+  const {output} = useContext(OutputContext);
+  const {input} = useContext(InputContext);
   return (
     <div className='input'>
-        <div className='ip'> 123 + 456</div>
-        <div className="op">576</div>
+        <div className='ip'>{input}</div>
+        <div className="op">{output}</div>
     </div>
   )
 }
